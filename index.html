@@ -1,0 +1,298 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Monitor Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Health Monitoring Dashboard</h1>
+    <div class="metrics">
+      <div class="metric-card">
+        <h2>Heart Rate</h2>
+        <div id="heartRate">--</div>
+        <span>bpm</span>
+      </div>
+      <div class="metric-card">
+        <h2>SpO2</h2>
+        <div id="spo2">--</div>
+        <span>%</span>
+      </div>
+      <div class="metric-card">
+        <h2>Temperature</h2>
+        <div id="temperature">--</div>
+        <span>°C</span>
+      </div>
+      <div class="metric-card">
+        <h2>Humidity</h2>
+        <div id="humidity">--</div>
+        <span>%</span>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="healthChart"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Monitor Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Health Monitoring Dashboard</h1>
+    <div class="metrics">
+      <div class="metric-card">
+        <h2>Heart Rate</h2>
+        <div id="heartRate">--</div>
+        <span>bpm</span>
+      </div>
+      <div class="metric-card">
+        <h2>SpO2</h2>
+        <div id="spo2">--</div>
+        <span>%</span>
+      </div>
+      <div class="metric-card">
+        <h2>Temperature</h2>
+        <div id="temperature">--</div>
+        <span>°C</span>
+      </div>
+      <div class="metric-card">
+        <h2>Humidity</h2>
+        <div id="humidity">--</div>
+        <span>%</span>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="healthChart"></canvas>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Health Monitor Dashboard. All rights reserved.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Monitor Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Health Monitor</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="./dashboard.html">Dashboard</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Homepage with button -->
+  <!-- <section class="hero">
+    <h1>Welcome to Health Monitoring System</h1>
+    <p>Monitor your vital health metrics in real-time!</p>
+    <a href="dashboard.html" class="btn">View Dashboard</a>
+  </section> -->
+
+  <!-- Footer -->
+  <!-- <footer class="footer">
+    <p>&copy; 2025 Health Monitor Dashboard. All rights reserved.</p>
+  </footer> -->
+
+  <!-- Dashboard (Initially hidden) -->
+  <div class="dashboard" id="dashboard" style="display: none;">
+    <h1>Health Monitoring Dashboard</h1>
+    <div class="metrics">
+      <div class="metric-card heart">
+        <h2>Heart Rate</h2>
+        <div id="heartRate">--</div>
+        <span>bpm</span>
+      </div>
+      <div class="metric-card spo2">
+        <h2>SpO2</h2>
+        <div id="spo2">--</div>
+        <span>%</span>
+      </div>
+      <div class="metric-card temp">
+        <h2>Temperature</h2>
+        <div id="temperature">--</div>
+        <span>°C</span>
+      </div>
+      <div class="metric-card humidity">
+        <h2>Humidity</h2>
+        <div id="humidity">--</div>
+        <span>%</span>
+      </div>
+    </div>
+    
+    <div class="chart-container">
+      <canvas id="healthChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Home Hero Section -->
+<section class="hero">
+  <h1>Stay Ahead with Real-Time Health Monitoring</h1>
+  <p>Track your Heart Rate, Oxygen Level, Temperature, and Humidity with our intelligent monitoring system.</p>
+  <a href="dashboard.html" class="btn">View Live Dashboard</a>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="features">
+  <h2>Why Choose Our Health Monitoring System?</h2>
+  <div class="feature-cards">
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Heart Monitoring" />
+      <h3>Heart Monitoring</h3>
+      <p>Accurate real-time heart rate analysis with early warning alerts.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1792/1792930.png" alt="Oxygen Monitoring" />
+      <h3>SpO2 Tracking</h3>
+      <p>Continuous blood oxygen tracking to keep you informed every second.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2942/2942911.png" alt="Temperature" />
+      <h3>Temperature Sensing</h3>
+      <p>Detects your body or room temperature instantly and accurately.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png" alt="Humidity Control" />
+      <h3>Humidity Monitoring</h3>
+      <p>Perfect for patients needing controlled air humidity environments.</p>
+    </div>
+  </div>
+</section>
+
+<section class="overview-simple">
+  <h2>Health Data Overview</h2>
+
+  <div class="overview-item">
+    <label>Heart Rate</label>
+    <div class="progress-bar">
+      <div class="progress" style="width: 75%; background-color: red;">75 bpm</div>
+    </div>
+  </div>
+
+  <div class="overview-item">
+    <label>SpO2</label>
+    <div class="progress-bar">
+      <div class="progress" style="width: 92%; background-color: blue;">92%</div>
+    </div>
+  </div>
+
+  <div class="overview-item">
+    <label>Temperature</label>
+    <div class="progress-bar">
+      <div class="progress" style="width: 38%; background-color: orange;">38°C</div>
+    </div>
+  </div>
+
+  <div class="overview-item">
+    <label>Humidity</label>
+    <div class="progress-bar">
+      <div class="progress" style="width: 50%; background-color: green;">50%</div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('overviewChart').getContext('2d');
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        datasets: [
+            {
+                label: 'Heart Rate',
+                data: [78, 80, 76, 79, 82, 85],
+                borderColor: 'red',
+                backgroundColor: 'transparent',
+                tension: 0.4,
+            },
+            {
+                label: 'SpO2',
+                data: [96, 95, 97, 95, 96, 94],
+                borderColor: 'blue',
+                backgroundColor: 'transparent',
+                tension: 0.4,
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: { position: 'bottom' }
+        }
+    }
+});
+</script>
+
+
+<!-- <script>
+    const enterBtn = document.getElementById('enterDashboardBtn');
+    const dashboard = document.getElementById('dashboard');
+    const home = document.querySelector('.home');
+
+    enterBtn.addEventListener('click', () => {
+      home.style.display = 'none';
+      dashboard.style.display = 'block';
+      
+    });
+  </script>  -->
+
+  <div class="footer">
+    <p>&copy; 2025 Health Monitor Dashboard. All rights reserved.</p>
+  </div>
+  <div class="footer">
+    <p>&copy; 2025 Health Monitor Dashboard. All rights reserved.</p>
+  </div>
+  <div class="footer">
+    <p>&copy; 2025 Health Monitor Dashboard. All rights reserved.</p>
+  </div>
+  
+  
+  
+  
+
+
+</body>
+</html>

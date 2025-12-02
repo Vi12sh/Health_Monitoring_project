@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Monitoring Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">Health Monitor</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <h1>Health Monitoring Dashboard</h1>
+    <div class="metrics">
+      <div class="metric-card">
+        <h2>Heart Rate</h2>
+        <div id="heartRate">--</div>
+        <span>bpm</span>
+      </div>
+      <div class="metric-card">
+        <h2>SpO2</h2>
+        <div id="spo2">--</div>
+        <span>%</span>
+      </div>
+      <div class="metric-card">
+        <h2>Temperature</h2>
+        <div id="temperature">--</div>
+        <span>°C</span>
+      </div>
+      <div class="metric-card">
+        <h2>Humidity</h2>
+        <div id="humidity">--</div>
+        <span>%</span>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="healthChart"></canvas>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Health Monitor Dashboard. All rights reserved.</p>
+  </div>
+
+  <!-- Link external script -->
+  <script src="script.js"></script>
+</body>
+</html>
